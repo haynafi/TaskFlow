@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --border: 214.3 31.8% 91.4%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.cmd-k-dialog {
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+}
+
+.syntax-highlight {
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+.syntax-highlight pre {
+  margin: 0;
+  padding: 1rem;
+}
+
+.copy-button {
+  transition: all 0.2s;
+}
+
+.copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
